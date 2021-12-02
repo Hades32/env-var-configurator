@@ -1,29 +1,28 @@
 {
-  "name": "balenablock-template",
+  "name": "env-var-config-block",
   "version": "0.0.1",
-  "description": "Template for building/testing/publishing balenablocks",
+  "description": "A balenablocks to set env vars of a device",
   "main": "lib/index.js",
+  "type": "module",
   "scripts": {
     "start": "node lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "node scripts/swagger.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/balena-io-playground/balenablock-template.git"
+    "url": "git+https://github.com/Hades32/env-var-configurator.git"
   },
   "keywords": [
     "balenablock"
   ],
-  "author": "Alex Bucknall",
+  "author": "Martin Rauscher",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/balena-io-playground/balenablock-template/issues"
+    "url": "https://github.com/Hades32/env-var-configurator/issues"
   },
-  "homepage": "https://github.com/balena-io-playground/balenablock-template#readme",
+  "homepage": "https://github.com/Hades32/env-var-configurator#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "swagger-ui-express": "^4.1.6",
-    "swagger-autogen": "^2.6.3"
+    "balena-sdk": "^16.0.0",
+    "express": "^4.17.1"
   }
 }

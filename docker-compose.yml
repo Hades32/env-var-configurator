@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  env-var-configurator:
+    build: .
+    environment:
+      first: "1"
+      second: "2"
+    labels:
+      io.balena.features.balena-api: 'true'
+    ports:
+      - '8888:8080'
